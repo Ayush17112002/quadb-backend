@@ -25,8 +25,8 @@ const text = `CREATE TABLE IF NOT EXISTS "stocks"(
     "sell" VARCHAR(255) NOT NULL,
     "last" VARCHAR(255) NOT NULL,
     "volume" VARCHAR(255) NOT NULL,
-    "base_unit" VARCHAR(255) NOT NULL,
-    PRIMARY KEY (base_unit)
+    "baseunit" VARCHAR(255) NOT NULL,
+    PRIMARY KEY (baseunit)
 )`;
 
 execute(text)

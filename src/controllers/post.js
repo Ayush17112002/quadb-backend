@@ -13,7 +13,7 @@ const postData = async () => {
       console.log(row);
       const query = {
         text: `
-        INSERT INTO ${process.env.DB_TABLENAME} ("name", "buy", "sell", "volume", "last", "base_unit") 
+        INSERT INTO ${process.env.DB_TABLENAME} ("name", "buy", "sell", "volume", "last", "baseunit") 
         VALUES($1, $2, $3, $4, $5, $6)`,
         values: [
           row["name"],
